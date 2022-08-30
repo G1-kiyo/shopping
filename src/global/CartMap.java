@@ -65,9 +65,12 @@ public class CartMap{
     public static Float getTotalPrice() {
         Float totalPrice =0.0f;
         for(Entry<Goods,Integer>item:cartMap.entrySet()){
+
             Goods good = item.getKey();
             Integer quantity = item.getValue();
             totalPrice = totalPrice + quantity*good.getPrice();
+            // System.out.println(totalPrice+","+quantity);
+
         }
         return totalPrice;
     }

@@ -150,7 +150,6 @@ public class SQLConnector {
 
     // 购物车1.订单号 2.客户账号 3.订单生成日期 4.订单总额
     public String insertOrderList(String orderID, String userID, Date date, Map<Goods, Integer> cartMap,Float totalPrice) {
-
         comnSql = "INSERT INTO orders(orderID,userID,orderDate,totalPrice) VALUES(?,?,?,?)";
         // subSql = "INSERT INTO orderdetails(orderID,goodName,quantity) VALUES(" + ")";
         try {

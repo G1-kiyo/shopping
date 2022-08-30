@@ -80,6 +80,9 @@ public class UserPanel extends JTabbedPane implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
+
+        connector = new SQLConnector();
+
         String result = connector.updateUser(UserLoginPanel.user.getUserID(), UserLoginPanel.user.getPoint());
         if(result.equals("更新成功")){
             System.exit(0);

@@ -13,6 +13,7 @@ public class User {
     }
     public void setPoint(Float point) {
         this.point = point;
+
     }
     public String getPassword() {
         return password;

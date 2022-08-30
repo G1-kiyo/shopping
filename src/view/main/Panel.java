@@ -217,6 +217,10 @@ public class Panel extends JPanel implements ActionListener {
                 ShoppingTicketList.shoppingTicketList.put(shoppingTicket.getOrderId(), shoppingTicket);
                 // 扣除用户积分
                 UserLoginPanel.user.setPoint(UserLoginPanel.user.getPoint()-CartMap.getTotalPrice());
+
+                connector = new SQLConnector();connector.updateUser(UserLoginPanel.user.getUserID(), UserLoginPanel.user.getPoint());
+                // System.out.println(UserLoginPanel.user.getPoint());
+
                 // 写入新的订单信息，更新用户信息
                 connector = new SQLConnector();
                 String insertResult = connector.insertOrderList(shoppingTicket.getOrderId(), UserLoginPanel.user.getUserID(), shoppingTicket.getDate(), shoppingTicket.getCartMap(), shoppingTicket.getTotalPrice());
