@@ -1,18 +1,29 @@
-## Getting Started
+# shopping 超市购物系统
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 功能描述
+1. 用户登录、注册
+2. 购买商品（可选择一定数量）
+3. 搜索指定商品
+4. 购物车
+    1. 查询购物车信息
+    2. 删除购物车信息
+    3. 继续补充商品
+5. 查询个人账户积分
+6. 查询/删除订单记录
+7. 查询指定购物小票
+8. 退出账户并存储最终数据
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## 技术框架
+采用Java语言编写
+|     | 工具  |
+---|---
+| GUI | swing+awt |
+| database  | MySQL |
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 预览
+![超市购物系统](https://github.com/G1-kiyo/shopping/blob/master/preview.gif)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 尚未完善的地方
+1. 切换界面/刷新界面的时间较长
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
